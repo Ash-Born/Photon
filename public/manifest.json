@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ZENITH - Fake News, Phishing Link & Malware Detector",
+  "version": "1.0.0",
+  "description": "Real-time AI protection against fake news, phishing links, and malware executables.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "ZENITH Extension"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardRead",
+    "webNavigation",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

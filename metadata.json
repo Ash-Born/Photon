@@ -1,0 +1,6 @@
+{
+  "name": "ZENITH - Cyber Security Suite",
+  "description": "Unified Cyber Security Browser Extension & AI Control Suite featuring Phishing Protection, ML Malware PE Analysis, AI Fake News Detection, Red Screen Threat Shield, and Tier Access Controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
